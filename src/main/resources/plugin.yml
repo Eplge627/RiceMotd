@@ -1,0 +1,19 @@
+name: RiceMotd
+main: cn.handyplus.rice.motd.RiceMotd
+version: 1.0.0
+author: handy
+website: https://ricedoc.handyplus.cn
+api-version: 1.13
+description: 米饭MOTD插件
+folia-supported: true
+commands:
+  riceMotd:
+    description: 米饭MOTD插件
+permissions:
+  riceMotd.*:
+    description: 米饭MOTD插件
+    children:
+      riceMotd.reload: true
+  description.reload:
+    description: 重载插件
+    default: op

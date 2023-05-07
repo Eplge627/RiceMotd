@@ -24,8 +24,7 @@ public class RiceMotd extends JavaPlugin {
 
         initApi.initCommand("cn.handyplus.rice.motd.command")
                 .initListener("cn.handyplus.rice.motd.listener")
-                .addMetrics(18406)
-                .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE), MotdConstants.PLUGIN_VERSION_URL);
+                .addMetrics(18406);
 
         MessageApi.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器！");
         MessageApi.sendConsoleMessage(ChatColor.GREEN + "Author:handy QQ群:1064982471");

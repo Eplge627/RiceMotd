@@ -5,6 +5,7 @@ import cn.handyplus.lib.annotation.HandyListener;
 import cn.handyplus.lib.core.CollUtil;
 import cn.handyplus.lib.util.BaseUtil;
 import cn.handyplus.rice.motd.constants.MotdConstants;
+import cn.handyplus.rice.motd.hook.PlaceholderApiUtil;
 import cn.handyplus.rice.motd.param.MotdParam;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -34,7 +35,9 @@ public class ServerListPingEventListener implements Listener {
         // 替换MOTD
         if (CollUtil.isNotEmpty(MotdConstants.MOTD_LIST)) {
             MotdParam param = MotdConstants.MOTD_LIST.get(new Random().nextInt(MotdConstants.MOTD_LIST.size()));
-            event.setMotd(BaseUtil.replaceChatColor(param.getMotd1() + "\n" + param.getMotd2()));
+            String motd1 = PlaceholderApiUtil.set(null, param.getMotd1());
+            String motd2 = PlaceholderApiUtil.set(null, param.getMotd2());
+            event.setMotd(BaseUtil.replaceChatColor(motd1 + "\n" + motd2));
         }
         // 替换ICON
         File file = this.randomFile();

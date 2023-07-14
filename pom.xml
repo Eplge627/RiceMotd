@@ -6,13 +6,14 @@
 
     <groupId>cn.handyplus.rice.motd</groupId>
     <artifactId>RiceMotd</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-folia</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <HandyLib.version>3.6.3-folia</HandyLib.version>
-        <folia-api.vesion>1.19.4-R0.1-SNAPSHOT</folia-api.vesion>
+        <HandyLib.version>3.7.1-folia</HandyLib.version>
+        <folia-api.vesion>1.20.1-R0.1-SNAPSHOT</folia-api.vesion>
         <lombok.version>1.18.26</lombok.version>
+        <placeholderapi.version>2.10.5</placeholderapi.version>
     </properties>
 
     <dependencies>
@@ -31,6 +32,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>${placeholderapi.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

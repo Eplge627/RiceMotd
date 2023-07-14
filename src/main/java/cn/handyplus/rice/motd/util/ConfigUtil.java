@@ -2,7 +2,6 @@ package cn.handyplus.rice.motd.util;
 
 import cn.handyplus.lib.InitApi;
 import cn.handyplus.lib.util.HandyConfigUtil;
-import cn.handyplus.lib.util.HandyPermissionUtil;
 import cn.handyplus.rice.motd.constants.MotdConstants;
 import cn.handyplus.rice.motd.param.MotdParam;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -30,7 +29,7 @@ public class ConfigUtil {
             InitApi.PLUGIN.saveResource("logo/logo.png", false);
         }
         // 缓存数据
-        Map<String, String> motdMap = HandyPermissionUtil.getStringMapChild(CONFIG, "motd");
+        Map<String, String> motdMap = HandyConfigUtil.getStringMapChild(CONFIG, "motd");
         if (motdMap.isEmpty()) {
             return;
         }

@@ -1,9 +1,9 @@
 package cn.handyplus.rice.motd.command;
 
 import cn.handyplus.lib.annotation.HandyCommand;
-import cn.handyplus.lib.api.MessageApi;
 import cn.handyplus.lib.command.HandyCommandFactory;
 import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.lib.util.MessageUtil;
 import cn.handyplus.rice.motd.constants.TabListEnum;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -66,7 +66,7 @@ public class RiceMotdCommand implements TabExecutor {
         List<String> helps = new ArrayList<>();
         helps.add("&e/plt reload          &f重载插件");
         for (String help : helps) {
-            MessageApi.sendMessage(sender, help);
+            MessageUtil.sendMessage(sender, help);
         }
         return true;
     }

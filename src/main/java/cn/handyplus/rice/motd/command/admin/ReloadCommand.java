@@ -1,7 +1,7 @@
 package cn.handyplus.rice.motd.command.admin;
 
-import cn.handyplus.lib.api.MessageApi;
 import cn.handyplus.lib.command.IHandyCommandEvent;
+import cn.handyplus.lib.util.MessageUtil;
 import cn.handyplus.rice.motd.util.ConfigUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -26,7 +26,7 @@ public class ReloadCommand implements IHandyCommandEvent {
     @Override
     public void onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         ConfigUtil.init();
-        MessageApi.sendMessage(sender, "&a配置重载完成");
+        MessageUtil.sendMessage(sender, "&a配置重载完成");
     }
 
 }

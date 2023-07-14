@@ -6,12 +6,12 @@
 
     <groupId>cn.handyplus.rice.motd</groupId>
     <artifactId>RiceMotd</artifactId>
-    <version>1.0.1-folia</version>
+    <version>1.0.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <HandyLib.version>3.7.1-folia</HandyLib.version>
-        <folia-api.vesion>1.20.1-R0.1-SNAPSHOT</folia-api.vesion>
+        <HandyLib.version>3.7.1</HandyLib.version>
+        <spigot-api.vesion>1.20.1-R0.1-SNAPSHOT</spigot-api.vesion>
         <lombok.version>1.18.26</lombok.version>
         <placeholderapi.version>2.10.5</placeholderapi.version>
     </properties>
@@ -23,9 +23,9 @@
             <version>${HandyLib.version}</version>
         </dependency>
         <dependency>
-            <groupId>dev.folia</groupId>
-            <artifactId>folia-api</artifactId>
-            <version>${folia-api.vesion}</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>${spigot-api.vesion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

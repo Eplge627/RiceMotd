@@ -18,7 +18,6 @@ public class RiceMotd extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        INSTANCE = this;
         InitApi initApi = InitApi.getInstance(this);
         ConfigUtil.init();
 

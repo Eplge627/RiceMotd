@@ -26,7 +26,7 @@ public class RiceMotd extends JavaPlugin {
 
         initApi.initCommand("cn.handyplus.rice.motd.command")
                 .initListener("cn.handyplus.rice.motd.listener")
-                .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE), MotdConstants.PLUGIN_VERSION_URL)
+                .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE, true), MotdConstants.PLUGIN_VERSION_URL)
                 .addMetrics(18406);
 
         MessageUtil.sendConsoleMessage("&a已成功载入服务器！");

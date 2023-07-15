@@ -22,5 +22,4 @@ public abstract class MotdConstants {
      */
     public final static String PLUGIN_VERSION_URL = "https://api.github.com/repos/handy-git/RiceMotd/releases/latest";
 
-
 }

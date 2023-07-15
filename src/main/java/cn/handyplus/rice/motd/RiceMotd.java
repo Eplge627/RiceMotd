@@ -14,7 +14,6 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author handy
  */
 public class RiceMotd extends JavaPlugin {
-    private static RiceMotd INSTANCE;
     public static boolean USE_PAPI;
 
     @Override
@@ -33,16 +32,6 @@ public class RiceMotd extends JavaPlugin {
 
         MessageUtil.sendConsoleMessage("&a已成功载入服务器！");
         MessageUtil.sendConsoleMessage("&aAuthor:handy MCBBS: https://www.mcbbs.net/thread-1442905-1-1.html");
-    }
-
-    @Override
-    public void onDisable() {
-        MessageUtil.sendConsoleMessage("&a已成功卸载！");
-        MessageUtil.sendConsoleMessage("&aAuthor:handy MCBBS: https://www.mcbbs.net/thread-1442905-1-1.html");
-    }
-
-    public static RiceMotd getInstance() {
-        return INSTANCE;
     }
 
 }

@@ -24,6 +24,11 @@ public class ReloadCommand implements IHandyCommandEvent {
     }
 
     @Override
+    public boolean isAsync() {
+        return true;
+    }
+
+    @Override
     public void onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         ConfigUtil.init();
         MessageUtil.sendMessage(sender, "&a配置重载完成");

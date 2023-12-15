@@ -22,7 +22,7 @@ public class RiceMotd extends JavaPlugin {
         ConfigUtil.init();
 
         // 加载PlaceholderApi
-        USE_PAPI = BaseUtil.hook(BaseConstants.PLACEHOLDER_API);
+        USE_PAPI = BaseUtil.hook(BaseConstants.PLACEHOLDER_API).isPresent();
 
         initApi.initCommand("cn.handyplus.rice.motd.command")
                 .initListener("cn.handyplus.rice.motd.listener")

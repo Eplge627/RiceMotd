@@ -15,9 +15,11 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class RiceMotd extends JavaPlugin {
     public static boolean USE_PAPI;
+    public static RiceMotd INSTANCE;
 
     @Override
     public void onEnable() {
+        INSTANCE = this;
         InitApi initApi = InitApi.getInstance(this);
         ConfigUtil.init();
 

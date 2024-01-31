@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,7 +19,7 @@ public enum TabListEnum {
     /**
      * 第一层提醒
      */
-    FIRST(Collections.singletonList("reload"), 0, null, 1),
+    FIRST(Arrays.asList("reload", "maintenance"), 0, null, 1),
 
     ;
 

@@ -4,6 +4,9 @@ isCheckUpdate: true
 # op登录时候是否发送更新提醒
 isCheckUpdateToOpMsg: true
 
+# 维护模式提醒
+maintenanceModeMsg: "&e服务器正在维护中..."
+
 # MOTD配置 (可自定义无限扩展多组,随机获取一组)
 motd:
   # 第一组配置

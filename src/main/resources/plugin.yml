@@ -1,6 +1,6 @@
 name: RiceMotd
 main: cn.handyplus.rice.motd.RiceMotd
-version: 1.0.2
+version: ${project.version}
 author: handy
 website: https://ricedoc.handyplus.cn/wiki/RiceMotd/
 api-version: 1.13
@@ -15,6 +15,10 @@ permissions:
     description: 米饭MOTD插件
     children:
       riceMotd.reload: true
+      riceMotd.maintenance: true
   description.reload:
     description: 重载插件
+    default: op
+  description.maintenance:
+    description: 维护模式
     default: op

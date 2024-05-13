@@ -1,7 +1,7 @@
 package cn.handyplus.rice.motd.command;
 
 import cn.handyplus.lib.annotation.HandyCommand;
-import cn.handyplus.lib.command.HandyCommandFactory;
+import cn.handyplus.lib.command.HandyCommandWrapper;
 import cn.handyplus.lib.util.BaseUtil;
 import cn.handyplus.lib.util.MessageUtil;
 import cn.handyplus.rice.motd.constants.TabListEnum;
@@ -29,7 +29,7 @@ public class RiceMotdCommand implements TabExecutor {
         if (args.length < 1) {
             return sendHelp(sender);
         }
-        boolean rst = HandyCommandFactory.getInstance().onCommand(sender, cmd, label, args, BaseUtil.getLangMsg("noPermission"));
+        boolean rst = HandyCommandWrapper.onCommand(sender, cmd, label, args, BaseUtil.getLangMsg("noPermission"));
         if (!rst) {
             return sendHelp(sender);
         }

@@ -32,7 +32,12 @@ public class RiceMotd extends JavaPlugin {
                 .addMetrics(18406);
 
         MessageUtil.sendConsoleMessage("&a已成功载入服务器！");
-        MessageUtil.sendConsoleMessage("&aAuthor:handy MCBBS: https://www.mcbbs.net/thread-1442905-1-1.html");
+        MessageUtil.sendConsoleMessage("&aAuthor:handy MCBBS: https://ricedoc.handyplus.cn/wiki/RiceMotd");
+    }
+
+    @Override
+    public void onDisable() {
+        InitApi.disable();
     }
 
 }

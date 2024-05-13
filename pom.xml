@@ -6,12 +6,12 @@
 
     <groupId>cn.handyplus.rice.motd</groupId>
     <artifactId>RiceMotd</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <HandyLib.version>3.8.0</HandyLib.version>
-        <spigot-api.vesion>1.20.2-R0.1-SNAPSHOT</spigot-api.vesion>
+        <HandyLib.version>3.8.9</HandyLib.version>
+        <spigot-api.vesion>1.20.6-R0.1-SNAPSHOT</spigot-api.vesion>
         <lombok.version>1.18.30</lombok.version>
         <placeholderapi.version>2.10.5</placeholderapi.version>
     </properties>
@@ -83,12 +83,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <filtering>true</filtering>
-                <directory>src/main/resources</directory>
-            </resource>
-        </resources>
     </build>
 
 </project>

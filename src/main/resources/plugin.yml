@@ -1,6 +1,6 @@
 name: RiceMotd
 main: cn.handyplus.rice.motd.RiceMotd
-version: 1.0.4
+version: 1.0.5
 author: handy
 website: https://ricedoc.handyplus.cn/wiki/RiceMotd/
 api-version: 1.13

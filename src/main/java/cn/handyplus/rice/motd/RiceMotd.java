@@ -31,8 +31,7 @@ public class RiceMotd extends JavaPlugin {
                 .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE, true), MotdConstants.PLUGIN_VERSION_URL)
                 .addMetrics(18406);
 
-        MessageUtil.sendConsoleMessage("&a已成功载入服务器！");
-        MessageUtil.sendConsoleMessage("&aAuthor:handy MCBBS: https://ricedoc.handyplus.cn/wiki/RiceMotd");
+        MessageUtil.sendConsoleMessage("&aAuthor:handy WIKI: https://ricedoc.handyplus.cn/wiki/RiceMotd");
     }
 
     @Override

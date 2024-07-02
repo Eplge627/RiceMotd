@@ -64,7 +64,8 @@ public class RiceMotdCommand implements TabExecutor {
             return true;
         }
         List<String> helps = new ArrayList<>();
-        helps.add("&e/plt reload          &f重载插件");
+        helps.add("&e/riceMotd reload     -     &f重载插件");
+        helps.add("&e/riceMotd maintenance  -   &f重载插件");
         for (String help : helps) {
             MessageUtil.sendMessage(sender, help);
         }
